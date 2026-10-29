@@ -18,7 +18,7 @@
     <button id="botaoSom">LEÃO</button>
 
     <script>
-        const botao = document.getElementById("botaoSom");
+        const botao = document.getElementById(i"botaoSom");
 
         const som = new Audio("sons/leao.mp3");
 
