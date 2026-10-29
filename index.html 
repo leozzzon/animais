@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sons de animais</title>
+
+    <style>
+        button {
+            padding: 15px 30px;
+            font-size: 20px bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="botaoSom">LEÃO</button>
+
+    <script>
+        const botao = document.getElementById("botaoSom");
+
+        const som = new Audio("sons/leao.mp3");
+
+        botao.addEventListener("click", function() {
+            som.currentTime = 0;
+            som.play();
+        });
+    </script>
+
+</body>
+</html>
